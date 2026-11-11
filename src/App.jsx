@@ -51,7 +51,7 @@ export default function App() {
   };
 
   return (
-    <div className="site-shell px-5 lg:px-20 xl:px-36">
+    <div className="site-shell px-2 lg:px-20 xl:px-36">
       <motion.div
         className="fixed left-0 top-0 z-[60] h-[2px] origin-left bg-crimson"
         style={{ scaleX: motionEnabled ? progress : scrollYProgress }}

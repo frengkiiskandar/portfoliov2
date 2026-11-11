@@ -36,7 +36,7 @@ export default function Portfolio() {
       }),
     [category, query],
   );
-  const featured = list.slice(0, 3);
+  const featured = list.slice(0, 4);
   const brands = Array.isArray(brandData) ? brandData : brandData.brands || [];
 
   return (
@@ -58,7 +58,7 @@ export default function Portfolio() {
             01 — 03
           </span>
         </div>
-        <div className="grid gap-7 md:grid-cols-3">
+        <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
           {featured.map((project, index) => (
             <ProjectCard
               key={project.id || project.media || project.title || index}
@@ -107,7 +107,7 @@ export default function Portfolio() {
         </div>
 
         {/* card untu semua project yang telah dibuat */}
-        <div className="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid gap-7 md:grid-cols-3">
           {filtered.slice(0, limit).map((project, index) => (
             <ProjectCard
               key={project.id || project.media || `${project.title}-${index}`}
