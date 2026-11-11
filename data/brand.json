@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "surya insani",
+    "file": "/Asset/img/brands/suryainsani.png"
+  },
+  {
+    "id": 2,
+    "name": "Universitas Pasir Pengaraian",
+    "file": "/Asset/img/brands/upp.png"
+  },
+  {
+    "id": 3,
+    "name": "PT Infidea",
+    "file": "/Asset/img/brands/infidea.png"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "QnA Infidea",
+    "category": "frontend",
+    "description": "Sistem aplikasi untuk jalur komunikasi karyawan PT. Infidea",
+    "link": "#",
+    "date": "July, 2024",
+    "media": "/Asset/img/projects/pro.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Deri Store",
+    "category": "Fullstack",
+    "description": "Shopping Application",
+    "link": "#",
+    "date": "August, 2024",
+    "media": "/Asset/img/projects/tiwiponsel.png"
+  },
+  {
+    "id": 3,
+    "title": "Surya Insani",
+    "category": "Fullstack",
+    "description": "Visual commercial untuk produk.",
+    "link": "https://rssuryainsani.com",
+    "date": "July, 2024",
+    "media": "/Asset/img/projects/suryainsani.png"
+  },
+  {
+    "id": 4,
+    "title": "Rijal Homecare",
+    "category": "Fullstack",
+    "description": "Layanan homecare untuk kesehatan masyarakat",
+    "link": "#",
+    "date": "July, 2024",
+    "media": "/Asset/img/projects/rijal.png"
+  },
+  {
+    "id": 5,
+    "title": "Sitem Pakar Diagnosa Penyakit Tumbuhan",
+    "category": "Fullstack",
+    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "link": "rssuryainsani.com",
+    "date": "July, 2026",
+    "media": "/Asset/img/projects/sistempakar.png"
+  },
+  {
+    "id": 6,
+    "title": "Fen Tax",
+    "category": "Frontend",
+    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "link": "fentax.vercel.app",
+    "date": "July, 2026",
+    "media": "/Asset/img/projects/fentax.png"
+  },
+  {
+    "id": 7,
+    "title": "Nexcent UI",
+    "category": "ui",
+    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "link": "#",
+    "date": "July, 2026",
+    "media": "/Asset/img/projects/nexcent.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Personal Website",
+    "category": "personal project",
+    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "link": "#",
+    "date": "July, 2026",
+    "media": "/Asset/img/projects/personal.png"
+  },
+  {
+    "id": 9,
+    "title": "E-Monitoring",
+    "category": "system development",
+    "description": "Sistem Aplikasi untuk memonitoring kedinasan Kec Ujung Batu",
+    "link": "#",
+    "date": "Feb, 2026",
+    "media": "/Asset/img/projects/monitoring.png"
+  },
+  {
+    "id": 10,
+    "title": "UI Design",
+    "category": "ui",
+    "description": "Perancangan desain antarmuka web",
+    "link": "#",
+    "date": "April, 2026",
+    "media": "/Asset/img/projects/dibimbing.png"
+  },
+  {
+    "id": 11,
+    "title": "BookBuzz",
+    "category": "frontend",
+    "description": "Rancangan sistem aplikasi penjualan buku - Web",
+    "link": "#",
+    "date": "April, 2026",
+    "media": "/Asset/img/projects/bookbuzz.png"
+  }
+]

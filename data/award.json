@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Fullstack Web Development",
+    "issuer": "Harisenin.com",
+    "date": "2023",
+    "image": "/Asset/img/award/hsbc.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Frontend Development",
+    "issuer": "Dibimbing.id",
+    "date": "2025",
+    "image": "/Asset/img/award/dibimbing.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Visualisasi Data",
+    "issuer": "Dicoding",
+    "date": "2023",
+    "image": "/Asset/img/award/dicoding.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Webinar Perangkat Lunak",
+    "issuer": "Growia",
+    "date": "2025",
+    "image": "/Asset/img/award/growia.jpg"
+  }
+]
