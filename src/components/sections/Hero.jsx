@@ -16,9 +16,15 @@ export default function Hero({ motionEnabled }) {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const titleY = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const titleY = useTransform(scrollYProgress, [0, 1], [0,480]);
   const portraitY = useTransform(scrollYProgress, [0, 1], [0, 55]);
   const animate = motionEnabled && !reduced;
+
+  // console.log("Motion Debug:", {
+  //   motionEnabled,
+  //   reduced,
+  //   animate,
+  // });
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -71,12 +77,14 @@ export default function Hero({ motionEnabled }) {
           AVAILABLE FOR COLLABORATION
         </span>
       </div>
-      <motion.div
-        style={animate ? { y: titleY } : {}}
-        className="display pointer-events-none absolute left-1/2 top-[115px] z-0 w-full -translate-x-1/2 text-center text-[25vw] leading-[.82] text-[#bd0c22] sm:top-[105px] sm:text-[23vw] md:top-[100px] md:text-[22vw] lg:text-[280px]"
-      >
-        PORTFOLIO
-      </motion.div>
+      <div className="absolute left-1/2 top-[115px] z-0 w-full -translate-x-1/2">
+        <motion.div
+          style={{ y: animate ? titleY : 0 }}
+          className="display pointer-events-none text-center text-[25vw] leading-[.82] text-[#bd0c22] sm:text-[23vw] md:text-[22vw] lg:text-[280px] opacity-35"
+        >
+          PORTFOLIO
+        </motion.div>
+      </div>
       <motion.div
         style={animate ? { y: portraitY } : {}}
         initial={animate ? { opacity: 0, scale: 0.98 } : false}
