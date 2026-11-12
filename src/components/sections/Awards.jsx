@@ -1,12 +1,47 @@
+import { useEffect, useRef } from "react";
 import SectionTitle from "../ui/SectionTitle.jsx";
 import award from "../../../data/award.json";
 import AwardCard from "../ui/AwardCard.jsx";
+import { gsap } from "../../lib/gsap.js";
 
 export default function Awards() {
+  const ref = useRef(null);
+
+  // animasi gsap
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".awards",
+        {
+          opacity: 0,
+          x: -30,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".awards",
+            start: "top 50%",
+            toggleActions: "play none none reverse",
+          },
+        },
+      );
+    }, ref);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="awards" className="section-rule bg-[#120e0f] py-20 md:py-28">
+    <section
+      ref={ref}
+      id="awards"
+      className="section-rule bg-[#120e0f] py-20 md:py-28 "
+    >
       <div className="section-wrap">
         <SectionTitle
+          className="awards"
           index="02"
           eyebrow="Recognition"
           title="SELECTED"

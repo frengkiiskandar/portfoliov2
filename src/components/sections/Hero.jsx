@@ -31,7 +31,7 @@ export default function Hero({ motionEnabled }) {
         {
           x: 0,
           opacity: 1,
-          duration: 3,
+          duration: 2,
           stagger: 0.3,
           ease: "power2.out",
         },
@@ -45,7 +45,7 @@ export default function Hero({ motionEnabled }) {
         {
           x: 0,
           opacity: 1,
-          duration: 3,
+          duration: 2,
           stagger: 0.3,
           ease: "power2.out",
         },
@@ -111,7 +111,8 @@ export default function Hero({ motionEnabled }) {
             Portfolio <ArrowDown size={16} />
           </a>
           <a
-            href="/Asset/cv/Frengki-CV.pdf"
+            href="/Asset/cv/resume.pdf"
+            download="frengki iskandar cv"
             className="flex min-h-11 p-4 items-center gap-2 text-[9px] font-bold tracking-widest text-white/60 hover:text-crimson border border-gray-500 "
           >
             <Download size={15} /> DOWNLOAD CV <ArrowUpRight size={13} />

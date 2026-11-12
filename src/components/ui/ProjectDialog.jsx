@@ -92,7 +92,7 @@ export default function ProjectDialog({ project, onClose }) {
                   {project.category || "Creative"}{" "}
                   {project.year ? `/ ${project.year}` : ""}
                 </p>
-                <div className="flex justify-between items-center w-full ">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 w-full ">
                   <p className="mt-3 text-sm leading-7 text-white/65">
                     {project.description ||
                       "Project description belum ditambahkan."}
@@ -101,16 +101,16 @@ export default function ProjectDialog({ project, onClose }) {
                     ""
                   ) : (
                     <button
-                      className="px-5 py-1 flex justify-center items-center gap-2 border border-white/65 rounded-sm"
+                      className="px-5 py-1 bg-red-500 flex justify-center items-center gap-2 text-white rounded-sm"
                       onClick={() =>
                         project.link
                           ? window.open(project.link, "noopener", "noreferrer")
                           : ""
                       }
                     >
-                      <p className="text-white/65 text-sm leading-7">
-                        show project
-                      </p>
+                      <span className="text-white/65 text-xs leading-7">
+                        kunjungi
+                      </span>
                       <ArrowUpRight size={18} />
                     </button>
                   )}

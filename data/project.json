@@ -3,7 +3,7 @@
     "id": 1,
     "title": "QnA Infidea",
     "category": "frontend",
-    "description": "Sistem aplikasi untuk jalur komunikasi karyawan PT. Infidea",
+    "description": "Sistem aplikasi untuk jalur komunikasid dan pengaduan karyawan PT. Infidea",
     "link": "#",
     "date": "July, 2024",
     "media": "/Asset/img/projects/pro.jpg"
@@ -13,7 +13,7 @@
     "title": "Deri Store",
     "category": "Fullstack",
     "description": "Shopping Application",
-    "link": "#",
+    "link": "http://deristore-tiwiponsel.vercel.app/",
     "date": "August, 2024",
     "media": "/Asset/img/projects/tiwiponsel.png"
   },
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Surya Insani",
     "category": "Fullstack",
-    "description": "Visual commercial untuk produk.",
+    "description": "Website resmi Rumah Sakit Surya Insani Pasir Pengaraian",
     "link": "https://rssuryainsani.com",
     "date": "July, 2024",
     "media": "/Asset/img/projects/suryainsani.png"
@@ -31,7 +31,7 @@
     "title": "Rijal Homecare",
     "category": "Fullstack",
     "description": "Layanan homecare untuk kesehatan masyarakat",
-    "link": "#",
+    "link": "https://rijal-app.vercel.app/",
     "date": "July, 2024",
     "media": "/Asset/img/projects/rijal.png"
   },
@@ -39,8 +39,8 @@
     "id": 5,
     "title": "Sitem Pakar Diagnosa Penyakit Tumbuhan",
     "category": "Fullstack",
-    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
-    "link": "rssuryainsani.com",
+    "description": "Sistem Aplikasi Web untuk diagnosa penyakit pada tumbuhan kelengkeng dengan penerapan metode Certainty Factor",
+    "link": "#",
     "date": "July, 2026",
     "media": "/Asset/img/projects/sistempakar.png"
   },
@@ -48,8 +48,8 @@
     "id": 6,
     "title": "Fen Tax",
     "category": "Frontend",
-    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
-    "link": "fentax.vercel.app",
+    "description": "Situs Web Perpajakan",
+    "link": "https://fentax.vercel.app",
     "date": "July, 2026",
     "media": "/Asset/img/projects/fentax.png"
   },
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Nexcent UI",
     "category": "ui",
-    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "description": "Implementasi desain antarmuka (UI) dan experience pengguna (UX) dalam programming",
     "link": "#",
     "date": "July, 2026",
     "media": "/Asset/img/projects/nexcent.jpg"
@@ -66,7 +66,7 @@
     "id": 8,
     "title": "Personal Website",
     "category": "personal project",
-    "description": "Sistem Aplikasi untuk diagnosa penyakit pada tumbuhan kelengkeng",
+    "description": "Website personal",
     "link": "#",
     "date": "July, 2026",
     "media": "/Asset/img/projects/personal.png"

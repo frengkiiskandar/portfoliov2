@@ -1,10 +1,11 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { Search, ArrowUpRight } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle.jsx";
 import ProjectCard from "../ui/ProjectCard.jsx";
 import ProjectDialog from "../ui/ProjectDialog.jsx";
 import projectData from "../../../data/project.json";
 import brandData from "../../../data/brand.json";
+import { gsap } from "../../lib/gsap.js";
 
 const categories = [
   "Semua",
@@ -20,6 +21,7 @@ const list = Array.isArray(projectData)
   : projectData.projects || [];
 
 export default function Portfolio() {
+  const ref = useRef(null);
   const [category, setCategory] = useState("Semua");
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(6);
@@ -39,12 +41,37 @@ export default function Portfolio() {
   const featured = list.slice(0, 4);
   const brands = Array.isArray(brandData) ? brandData : brandData.brands || [];
 
+  // animasi gsap
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".portfolioLeft",
+        { opacity: 0, x: -30 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 2,
+          stagger: 0.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        },
+      );
+    }, ref);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section
+      ref={ref}
       id="portfolio"
       className="section-wrap section-rule py-20 md:py-28"
     >
-      <SectionTitle
+      <SectionTitle className="portfolioLeft"
         index="01"
         eyebrow="Selected work"
         title="SELECTED"
@@ -53,9 +80,9 @@ export default function Portfolio() {
       />
       <div className="mb-14">
         <div className="mb-5 flex items-center justify-between">
-          <p className="eyebrow">Featured projects</p>
+          <p className="eyebrow portfolioLeft">Featured projects</p>
           <span className="text-[9px] tracking-widest text-white/35">
-            01 — 03
+            01 — 04
           </span>
         </div>
         <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
@@ -74,8 +101,8 @@ export default function Portfolio() {
           <div>
             <p className="eyebrow">The archive</p>
             <h3 className="display mt-2 text-4xl">
-              ALL PROJECTS{" "}
-              <span className="text-crimson">({filtered.length})</span>
+              ALL PROJECTS {" "}
+              <span className="text-crimson"> ({filtered.length}) </span>
             </h3>
           </div>
           <label className="flex min-h-11 w-full items-center gap-3 border-b border-white/20 px-2 lg:max-w-[270px]">

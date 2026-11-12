@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Mail, Send } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle.jsx";
+import { gsap } from "../../lib/gsap.js";
 
 export default function Contact() {
+  const ref = useRef(null)
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -23,9 +25,52 @@ export default function Contact() {
       "noopener,noreferrer",
     );
   };
+
+
+    // animasi gsap
+    useEffect(() => {
+      const ctx = gsap.context(() => {
+        gsap.fromTo(
+          ".contact",
+          { opacity: 0, x: -30 },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+            stagger: 0.3,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".contact",
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+        gsap.fromTo(
+          ".contactUp",
+          { opacity: 0, y : 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            stagger: 0.3,
+            ease: "power1.in",
+            scrollTrigger: {
+              trigger: ".contact",
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+      }, ref);
+  
+      return () => ctx.revert();
+    }, []);
+
   return (
-    <section id="contact" className="section-wrap section-rule py-20 md:py-28">
+    <section ref={ref} id="contact" className="section-wrap section-rule py-20 md:py-28">
       <SectionTitle
+      className="contact"
         index="05"
         eyebrow="Start a conversation"
         title="HAVE A PROJECT?"
@@ -33,7 +78,7 @@ export default function Contact() {
         description="Punya ide atau kebutuhan aplikasi? Ceritakan secara singkat. Kita diskusikan solusi yang paling masuk akal."
       />
       <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
-        <div>
+        <div className="contact">
           <p className="font-hand text-4xl text-crimson">Say hello.</p>
           <h3 className="display mt-2 text-5xl leading-none sm:text-6xl">
             LET’S MAKE
@@ -53,7 +98,7 @@ export default function Contact() {
         </div>
         <form
           onSubmit={send}
-          className="border border-white/10 bg-[#100d0e] p-5 sm:p-8"
+          className="border border-white/10 bg-[#100d0e] p-5 sm:p-8 contactUp"
         >
           <p className="eyebrow mb-6">PROJECT BRIEF</p>
           <div className="grid gap-5 sm:grid-cols-2">

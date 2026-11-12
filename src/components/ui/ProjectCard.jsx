@@ -31,14 +31,15 @@ export default function ProjectCard({ project, index, onOpen }) {
           ) : (
             <div className="media-fallback h-full">F.</div>
           )}
-          <span className="absolute left-3 top-3 bg-black/75 px-3 py-2 text-[9px] font-bold uppercase tracking-widest text-white">
-            {project.type === "render"
-              ? "3D Breakdown"
-              : isVideo
-                ? "Film / Video"
-                : project.type === "website"
-                  ? "Website"
-                  : "Still / Image"}
+          <span className="absolute left-3 top-3 bg-black/75 px-3 py-1 text-[9px] font-sans tracking-widest text-white rounded-full border border-gray-800">
+            {project.link === "#" ? (
+              <span></span>
+            ) : (
+              <div className="flex justify-start items-center gap-2 ">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                online
+              </div>
+            )}
           </span>
           <span className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-crimson text-white opacity-0 transition group-hover:opacity-100 max-sm:opacity-100">
             {isVideo ? (
