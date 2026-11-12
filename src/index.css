@@ -1,3 +1,4 @@
+@import '@fontsource-variable/inter';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,7 +24,7 @@ body {
   margin: 0;
   min-width: 320px;
   background: #090909;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter Variable', sans-serif;
 }
 button,
 input,

@@ -80,7 +80,7 @@ export default function Hero({ motionEnabled }) {
       <div className="absolute left-1/2 top-[115px] z-0 w-full -translate-x-1/2">
         <motion.div
           style={{ y: animate ? titleY : 0 }}
-          className="display pointer-events-none text-center text-[25vw] leading-[.82] text-[#bd0c22] sm:text-[23vw] md:text-[22vw] lg:text-[280px] opacity-35"
+          className="display pointer-events-none text-center text-[18vw] leading-[.82] text-[#bd0c22] md:text-[22vw] lg:text-[280px] opacity-35"
         >
           PORTFOLIO
         </motion.div>
