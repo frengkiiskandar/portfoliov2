@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frengkiiskandar.vercel.app/sitemap.xml

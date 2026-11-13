@@ -46,9 +46,9 @@ const journeyData = [
   {
     period: "Selected Project",
     category: "Development Milestone",
-    title: "Village Monitoring System",
+    title: "Monitoring System",
     description:
-      "Mengembangkan aplikasi sistem monitoring desa untuk Kecamatan Ujung Batu menggunakan teknologi MySQL, Express.js, React.js, dan Node.js.",
+      "Mengembangkan aplikasi sistem monitoring desa untuk Kantor Kecamatan menggunakan Fullstack MERN",
     tags: ["MySQL", "ExpressJs", "ReactJs", "NodeJs"],
   },
   {

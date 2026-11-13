@@ -60,7 +60,7 @@ export default function About() {
           scrollTrigger: {
             trigger: ".about",
             start: "top 80%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play reverse play reverse",
           },
         },
       );
@@ -76,7 +76,7 @@ export default function About() {
           scrollTrigger: {
             trigger: ".aboutLeft",
             start: "top 80%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play reverse play reverse",
           },
         },
       );
@@ -92,7 +92,7 @@ export default function About() {
           scrollTrigger: {
             trigger: ".aboutRight",
             start: "top 80%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play reverse play reverse",
           },
         },
       );

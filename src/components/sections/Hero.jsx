@@ -70,10 +70,9 @@ export default function Hero({ motionEnabled }) {
         <span>
           CREATIVE DEVELOPER
           <br />
-          <span className="text-white/30">VISUAL STORYTELLER</span>
         </span>
         <span className="flex items-center gap-2 text-right">
-          <i className="size-2 rounded-full bg-crimson shadow-[0_0_14px_#e32b3c]" />{" "}
+          <i className="size-2 rounded-full bg-green-900 shadow-[0_0_14px_#e32b3c]" />{" "}
           AVAILABLE FOR COLLABORATION
         </span>
       </div>

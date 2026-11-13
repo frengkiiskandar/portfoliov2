@@ -23,8 +23,8 @@ export default function Awards() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".awards",
-            start: "top 50%",
-            toggleActions: "play none none reverse",
+            start: "top 90%",
+            toggleActions: "play reverse play reverse",
           },
         },
       );

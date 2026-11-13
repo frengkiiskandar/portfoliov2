@@ -4,7 +4,7 @@ import SectionTitle from "../ui/SectionTitle.jsx";
 import { gsap } from "../../lib/gsap.js";
 
 export default function Contact() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -26,51 +26,54 @@ export default function Contact() {
     );
   };
 
+  // animasi gsap
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".contact",
+        { opacity: 0, x: -30 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.5,
+          stagger: 0.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".contact",
+            start: "top 80%",
+            toggleActions: "play reverse play reverse",
+          },
+        },
+      );
+      gsap.fromTo(
+        ".contactUp",
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+          stagger: 0.3,
+          ease: "power1.in",
+          scrollTrigger: {
+            trigger: ".contact",
+            start: "top 80%",
+            toggleActions: "play reverse play reverse",
+          },
+        },
+      );
+    }, ref);
 
-    // animasi gsap
-    useEffect(() => {
-      const ctx = gsap.context(() => {
-        gsap.fromTo(
-          ".contact",
-          { opacity: 0, x: -30 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 1.5,
-            stagger: 0.3,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: ".contact",
-              start: "top 80%",
-              toggleActions: "play none none reverse",
-            },
-          },
-        );
-        gsap.fromTo(
-          ".contactUp",
-          { opacity: 0, y : 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            stagger: 0.3,
-            ease: "power1.in",
-            scrollTrigger: {
-              trigger: ".contact",
-              start: "top 80%",
-              toggleActions: "play none none reverse",
-            },
-          },
-        );
-      }, ref);
-  
-      return () => ctx.revert();
-    }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <section ref={ref} id="contact" className="section-wrap section-rule py-20 md:py-28 ">
+    <section
+      ref={ref}
+      id="contact"
+      className="section-wrap section-rule py-20 md:py-28 "
+    >
       <SectionTitle
-      className="contact"
+        className="contact"
         index="05"
         eyebrow="Start a conversation"
         title="HAVE A PROJECT?"
@@ -90,7 +93,8 @@ export default function Contact() {
               href="mailto:hello@example.com"
               className="flex min-h-12 items-center gap-4 border-b border-white/10 text-sm hover:text-crimson"
             >
-              <Mail size={17} className="text-crimson " />frankierockabilly@gmail.com{" "}
+              <Mail size={17} className="text-crimson " />
+              frankierockabilly@gmail.com{" "}
               <ArrowUpRight size={15} className="ml-auto" />
             </a>
             {/* <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="flex min-h-12 items-center gap-4 border-b border-white/10 text-sm hover:text-crimson"><Instagram size={17} className="text-crimson"/> Instagram <ArrowUpRight size={15} className="ml-auto"/></a> */}
