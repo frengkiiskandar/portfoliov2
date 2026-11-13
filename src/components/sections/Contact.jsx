@@ -68,13 +68,13 @@ export default function Contact() {
     }, []);
 
   return (
-    <section ref={ref} id="contact" className="section-wrap section-rule py-20 md:py-28">
+    <section ref={ref} id="contact" className="section-wrap section-rule py-20 md:py-28 ">
       <SectionTitle
       className="contact"
         index="05"
         eyebrow="Start a conversation"
         title="HAVE A PROJECT?"
-        accent="LET’S TALK."
+        accent="LET'S TALK."
         description="Punya ide atau kebutuhan aplikasi? Ceritakan secara singkat. Kita diskusikan solusi yang paling masuk akal."
       />
       <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
@@ -85,12 +85,12 @@ export default function Contact() {
             <br />
             IT HAPPEN.
           </h3>
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 space-y-4 text-white/50">
             <a
               href="mailto:hello@example.com"
               className="flex min-h-12 items-center gap-4 border-b border-white/10 text-sm hover:text-crimson"
             >
-              <Mail size={17} className="text-crimson" /> frankierockabilly@gmail.com{" "}
+              <Mail size={17} className="text-crimson " />frankierockabilly@gmail.com{" "}
               <ArrowUpRight size={15} className="ml-auto" />
             </a>
             {/* <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="flex min-h-12 items-center gap-4 border-b border-white/10 text-sm hover:text-crimson"><Instagram size={17} className="text-crimson"/> Instagram <ArrowUpRight size={15} className="ml-auto"/></a> */}

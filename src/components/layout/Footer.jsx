@@ -6,13 +6,13 @@ export default function Footer() {
       id: 1,
       name: "Instagram",
       image: "/Asset/svg/instagram.svg",
-      url: "https://instagram.com/frengkiiskandar",
+      url: "https://www.instagram.com/frengky_iskandar?rpxt=a3ZjaXR6OWc0bGoy",
     },
     {
       id: 2,
       name: "WhatsApp",
       image: "/Asset/svg/whatsapp.svg",
-      url: "https://github.com/frengkiiskandar",
+      url: "https://wa.me/6281275691395",
     },
     {
       id: 3,

@@ -146,7 +146,7 @@ export default function Portfolio() {
         </div>
         {filtered.length === 0 && (
           <p className="py-16 text-center text-sm text-white/40">
-            Tidak ada project yang cocok.
+            Belum ada project yang yang dikerjakan
           </p>
         )}
         {filtered.length > limit && (

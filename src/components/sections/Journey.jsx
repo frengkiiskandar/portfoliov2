@@ -8,7 +8,7 @@ const journeyData = [
     category: "The Beginning",
     title: "First Step into Programming",
     description:
-      "Memulai perjalanan di dunia programming saat masa perkuliahan. Ketertarikan terhadap perkembangan teknologi yang begitu pesat membawa saya untuk mulai melirik dunia programming.",
+      "Pengenalan di dunia programming dimulai saat masa SMA ketika mengikuti Olimpiade Komputer tingkat Provinsi dan mengenal banyak orang hebat. Ketertarikan terhadap perkembangan teknologi yang begitu pesat membawa saya untuk mulai melirik dunia programming.",
     tags: ["Java", "Php"],
   },
   {
@@ -49,7 +49,7 @@ const journeyData = [
     title: "Village Monitoring System",
     description:
       "Mengembangkan aplikasi sistem monitoring desa untuk Kecamatan Ujung Batu menggunakan teknologi MySQL, Express.js, React.js, dan Node.js.",
-    tags: ["MySQL", "Express.js", "React.js", "Node.js"],
+    tags: ["MySQL", "ExpressJs", "ReactJs", "NodeJs"],
   },
   {
     period: "Present",
@@ -153,7 +153,7 @@ export default function Journey() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-white/50">
+                  <p className="mt-3 max-w-2xl text-sm leading-6 font-light md:font-normal md:leading-7 text-white/50">
                     {item.description}
                   </p>
 

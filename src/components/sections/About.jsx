@@ -17,6 +17,8 @@ const skills = [
   "Figma",
   "GitHub",
   "GitLab",
+  "Figma",
+  "Photoshop",
 ];
 const process = [
   [
@@ -121,7 +123,7 @@ export default function About() {
             <br />
             <span className="text-crimson aboutLeft">PURPOSE.</span>
           </h3>
-          <p className="mt-6 text-sm leading-8 text-white/55 aboutLeft">
+          <p className="mt-6 text-sm leading-6 md:leading-8 text-white/55 aboutLeft">
             Saya seorang programmer yang berfokus pada pengembangan aplikasi
             web. Saya menikmati proses merancang antarmuka, membangun backend,
             mengelola database, dan memastikan semuanya berjalan dengan baik.

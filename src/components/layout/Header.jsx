@@ -4,10 +4,10 @@ import { ArrowUpRight, Menu, Pause, Play, X } from "lucide-react";
 
 const links = [
   ["portfolio", "Portfolio"],
-  ["awards", "Awards"],
-  ["about", "Tentang"],
-  ["experience", "Perjalanan"],
-  ["contact", "Kontak"],
+  ["awards", "Certificate"],
+  ["about", "About"],
+  ["experience", "Journey"],
+  ["contact", "Contact"],
 ];
 
 export default function Header({ motionEnabled, onToggleMotion }) {

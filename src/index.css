@@ -1,11 +1,12 @@
 @import '@fontsource-variable/inter';
+@import '@fontsource/anton';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   color-scheme: dark;
-  font-family: "Manrope", sans-serif;
+  /* font-family: "Manrope", sans-serif; */
   background: #090909;
   color: #f2efeb;
   font-synthesis: none;

@@ -10,6 +10,15 @@
   },
   {
     "id": 2,
+    "title": "Fen Tax",
+    "category": "Frontend",
+    "description": "Situs Web Perpajakan",
+    "link": "https://fentax.vercel.app",
+    "date": "July, 2026",
+    "media": "/Asset/img/projects/fentax.png"
+  },
+  {
+    "id": 3,
     "title": "Deri Store",
     "category": "Fullstack",
     "description": "Shopping Application",
@@ -18,7 +27,7 @@
     "media": "/Asset/img/projects/tiwiponsel.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Surya Insani",
     "category": "Fullstack",
     "description": "Website resmi Rumah Sakit Surya Insani Pasir Pengaraian",
@@ -27,7 +36,7 @@
     "media": "/Asset/img/projects/suryainsani.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Rijal Homecare",
     "category": "Fullstack",
     "description": "Layanan homecare untuk kesehatan masyarakat",
@@ -36,7 +45,7 @@
     "media": "/Asset/img/projects/rijal.png"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Sitem Pakar Diagnosa Penyakit Tumbuhan",
     "category": "Fullstack",
     "description": "Sistem Aplikasi Web untuk diagnosa penyakit pada tumbuhan kelengkeng dengan penerapan metode Certainty Factor",
@@ -44,15 +53,7 @@
     "date": "July, 2026",
     "media": "/Asset/img/projects/sistempakar.png"
   },
-  {
-    "id": 6,
-    "title": "Fen Tax",
-    "category": "Frontend",
-    "description": "Situs Web Perpajakan",
-    "link": "https://fentax.vercel.app",
-    "date": "July, 2026",
-    "media": "/Asset/img/projects/fentax.png"
-  },
+
   {
     "id": 7,
     "title": "Nexcent UI",
